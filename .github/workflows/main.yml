@@ -1,14 +1,16 @@
-name: 'GitHub Actions Weather Bot'
- 
-on:
-  push:
+name: Experiment
+on: 
   schedule:
-  # 定时任务，在每天的5点推送天气信息到邮箱
-    - cron: '*/1 * * * *'
+  - cron: '*/5 * * * *'
 
 jobs:
-  bot:
+  job1:
+    name: Debug
     runs-on: ubuntu-latest
+
     steps:
-      - name: 'Get Weather'
-        run: echo hello github
+    - name: Git checkout
+      uses: actions/checkout@v2
+      with: { ref: debug }
+    - name: List files
+      run: ls
