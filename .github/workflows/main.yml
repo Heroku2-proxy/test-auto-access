@@ -1,5 +1,6 @@
 name: Experiment
-on:     
+on:
+  push:    
   schedule:
   - cron: '*/5 * * * *'
 
