@@ -1,13 +1,13 @@
-name: Experiment
+name: Access HEROKUAPP
 on:
   push:    
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/1 * * * *'
 
 jobs:
   job1:
-    name: Debug
+    name: Access HEROKUAPP_lfproxz
     runs-on: ubuntu-latest
     steps:
-      - name: List files
-        run: ls
+      - name: Access Herokuapp_lfproxz
+        run: curl https://lfproxz.herokuapp.com/
