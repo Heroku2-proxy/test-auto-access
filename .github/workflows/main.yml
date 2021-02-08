@@ -2,7 +2,7 @@ name: Access HerokuApp
 on:
   push:    
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '*/24 * * * *'
 
 jobs:
   lfproxz:
@@ -10,3 +10,8 @@ jobs:
     steps:
       - name: Access lfproxz
         run: curl https://lfproxz.herokuapp.com/
+  onepiecelf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Access onepiecelf
+        run: curl https://onepiecelf.herokuapp.com
