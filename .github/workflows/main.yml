@@ -2,7 +2,7 @@ name: Access HerokuApp
 on:
   push:    
   schedule:
-    - cron: '*/24 * * * *'
+    - cron: '*/24 0-12/1 * * *'
 
 jobs:
   lfproxz:
