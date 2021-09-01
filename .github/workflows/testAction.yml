@@ -1,11 +1,10 @@
-name: Webhook Test1
+name: Webhook
 
 on: repository_dispatch
 
 jobs:
     build:
         runs-on: ubuntu-latest
-
         steps:
             - name: Hello World
-              run: echo Hello World! 66666
+              run: echo Hello World!
