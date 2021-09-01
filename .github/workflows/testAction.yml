@@ -1,7 +1,9 @@
 name: Webhook
 
-on: repository_dispatch:
-        - type: hello
+on:
+    repository_dispatch:
+        types:
+            - hello
 
 jobs:
     build:
