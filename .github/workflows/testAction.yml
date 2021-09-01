@@ -1,16 +1,16 @@
 name: Webhook
 
 on:
-    repository_dispatch:
-        types:
-            - hello
-            - test
-            - none
+  repository_dispatch:
+    types:
+      - hello
+      - test
+      - none
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Hello World
-              if: github.event.action == 'hello'
-              run: echo Hello World!
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        if: github.event.action == 'hello'
+        run: echo Hello World!
