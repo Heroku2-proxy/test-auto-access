@@ -2,7 +2,10 @@ name: Webhook
 
 on:
     repository_dispatch:
-        types: [hello, test, none]
+        types:
+            - hello
+            - test
+            - none
 
 jobs:
     build:
